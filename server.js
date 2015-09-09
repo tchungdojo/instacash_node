@@ -9,7 +9,7 @@ app.get('/', function(req, res){
 	res.render('index');
 })
 
-var server = app.listen(7777);
+var server = app.listen('https://instacash-node.herokuapp.com/');
 var io = require('socket.io').listen(server);
 
 var current_user_id = {};
