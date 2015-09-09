@@ -13,8 +13,8 @@ app.get('/', function(req, res){
 // var server = app.listen('https://instacash-node.herokuapp.com/');
 
 
-var server = app.listen(5000);
-var io = require('socket.io').listen(server);
+// var server = app.listen(5000);
+var io = require('socket.io').listen(parseInt(process.env.PORT || 8000));
 
 var current_user_id = {};
 
